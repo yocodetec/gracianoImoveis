@@ -17,7 +17,7 @@
       <!-- CONTEÚDO -->
 	<body>
 	  <!-- MENU -->
-        	<div class="col-lg-">
+        	<div class="col-lg-" id="toda">
               <div class="row">
               <!-- CABEÇALHO -->
     			<div id="header">
@@ -64,20 +64,20 @@
     		</div>
     			
         	<!-- PRIMEIRA DIV -->
-            <div class="col-sm- div2">
+            <div class="col-sm-" id="div2">
                 	
-                 <div class="col-sm- div3">
+                 <div class="col-sm-" id="div3">
                      <!-- COLOCAR POR EX.: UM FORMULÁRIO -->
                                     	
                  </div>
             </div>
             
-  			<div class="col-sm- div4">
+  			<div class="col-sm-" id="div4">
   			<!--  ESPAÇO  -->
   			</div>
-  			<div class="col-sm- div5">
-                <div class="col-sm- div6">
-                	<div class="col-sm- div7">
+  			<div class="col-sm-" id="div5">
+                <div class="col-sm-" id="div6">
+                	<div class="col-sm-" id="div7">
                 	<!-- COLOCAR TEXTO NA CX7 -->
               		 <div class="textocx7">
               		 <!-- AQUI -->
@@ -93,15 +93,15 @@
                 </div>
             </div>
 			
-			<div class="col-sm- div8">
+			<div class="col-sm-" id="div8">
 				<!--  ESPAÇO  -->
             </div>
-            <div class="col-sm- div9">
-            	<div class="col-sm- div10">
+            <div class="col-sm-" id="div9">
+            	<div class="col-sm-" id="div10">
             	
             	</div>
   			 </div>
-            <div class="col-sm- div11">
+            <div class="col-sm-" id="div11">
   			   <!--  ESPAÇO  -->
   			</div>
   			   <!--  RODAPÉ  -->
