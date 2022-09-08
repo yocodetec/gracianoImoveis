@@ -1,16 +1,16 @@
-.col-lg- {
+#toda {
   	min-height: 2200px;
 }
-  .div1{
+  #div1{
     min-height: 90px;
     text-align: center;
     background-color:#c0c0c0;
   }
-  .div2{
+  #div2{
     background-color:#D3D3D3;
     min-height: 600px;
   }
-    .div3{
+    #div3{
     min-height: 415px;
     width:450px;
     background-color:#ffffff;
@@ -21,21 +21,21 @@
   	text-align: center
   }
   
-  .div4{
+  #div4{
     min-height: 90px;
     text-align: center;
   }
-  .div5{
+  #div5{
     min-height: 500px;
     background-color:#363636;
   }
-   .div6{
+   #div6{
     min-height: 500px;
     width:550px;
     background-color:#ffff80;
     float: right;
   }
-   .div7{
+   #div7{
     min-height: 415px;
     width:450px;
     background-color:#ffffff;
