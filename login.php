@@ -23,7 +23,7 @@
     			<div id="header">
                     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white">
                       <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="index.php">
                         <!-- LOGO DA EMPRESA -->
                          <img src="img/logo_graciano.png" alt="" width="170" height="70" class="d-inline-block align-text-top">
                           </a>
