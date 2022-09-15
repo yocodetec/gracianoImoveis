@@ -57,7 +57,7 @@
                               </ul>
                             </li>
                              <li class="nav-item">
-                              <a class="nav-link active" href="loginyocode.php">Login</a>
+                              <a class="nav-link active" href="login.php">Login</a>
                             </li>
                           </ul>
                         </div>
