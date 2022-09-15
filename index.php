@@ -55,6 +55,9 @@
                                 <li><a class="dropdown-item" href="#">Simuladores</a></li>
                                 <li><a class="dropdown-item" href="#">Como vender</a></li>
                               </ul>
+				    <li class="nav-item">
+                              <a class="nav-link active" href="login.php">Login</a>
+                            </li>
                             </li>
                           </ul>
                         </div>
