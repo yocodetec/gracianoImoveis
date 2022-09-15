@@ -110,7 +110,6 @@
   			   <!--  RODAPÉ  -->
  		 <div id="footer">
     		<div class="textoarea">
-    		   RODAPÉ 
     		</div>
     	</div>
     	
