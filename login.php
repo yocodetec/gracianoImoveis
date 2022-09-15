@@ -44,7 +44,7 @@
                               </ul>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link active" href="#">Sobre nós</a>
+                              <a class="nav-link active" href="frontQuemSomos.php">Sobre nós</a>
                             </li>
                             <li class="nav-item dropdown">
                               <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -55,6 +55,9 @@
                                 <li><a class="dropdown-item" href="#">Simuladores</a></li>
                                 <li><a class="dropdown-item" href="#">Como vender</a></li>
                               </ul>
+                            </li>
+                             <li class="nav-item">
+                              <a class="nav-link active" href="loginyocode.php">Login</a>
                             </li>
                           </ul>
                         </div>
@@ -68,10 +71,10 @@
            <br><br><br><br><br><br><br>
            <div class="container">
     		<div class="row">
-                 <div class="col align-self-center" id="div3">
+                 <div class="col-sm-4" id="div3">
                  <form>
                                   <div class="form-group">
-                                   
+                                   <br><br>
                                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=" ex: yocodetec@gmail.com"><br>
                                   </div>
                                   <div class="form-group">
@@ -91,18 +94,14 @@
  		
 	</body>
 	<footer class="container-fluid text-center" id="footer">
-
   
   
   
 			<p style="font-size: 20px; font-family: Arial; color: #fff;">
 			&copy; Todos os direitos reservados</p>
                  </div> 
-
-
           </div>
       </div>
-
 </footer>
 	
 	
