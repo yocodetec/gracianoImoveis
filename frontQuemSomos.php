@@ -12,6 +12,13 @@
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+			
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 	</head>	
 	
       <!-- CONTEÚDO -->
@@ -23,7 +30,7 @@
     			<div id="header">
                     <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
                       <div class="container-fluid">
-                        <a class="navbar-brand" href="index.php">
+                        <a class="navbar-brand" href="frontHome.php">
                         <!-- LOGO DA EMPRESA -->
                          <img src="img/logo_graciano.png"  alt="" width="170" height="70" class="d-inline-block align-text-top">
                           </a>
@@ -56,11 +63,6 @@
                                 <li><a class="dropdown-item" href="#">Como vender</a></li>
                               </ul>
                             </li>
-                            <li class="nav-item">
-                              <a class="nav-link active" href="login.php">Login</a>
-                            </li>
-                            
-                            
                           </ul>
                         </div>
                       </div>
@@ -71,7 +73,7 @@
             	<!-- PRIMEIRA DIV -->
                 <div class="col-sm- div2">
                 <!-- COLOCAR TEXTO --> 
-
+			 <img src="img/sobrenos.png"  alt="" width="100%" height="1%">
                 </div>
                 
                 <div class="col-sm- div3">
@@ -121,4 +123,5 @@
   		
   </div>  			
 	</body>
-</html>  
+</html> 
+    			
