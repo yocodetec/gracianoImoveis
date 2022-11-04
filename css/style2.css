@@ -1,137 +1,85 @@
 .col-lg- {
   	min-height: 2200px;
-}
-  .div1{
-    min-height: 90px;
-    text-align: center;
-    background-color:#c0c0c0;
-  }
-  .div2{
+	}
+  	.div2{
+    min-height: 420px;
+    text-align: center;  
+       background-color:#8080c0;
+   
+  	}
+  	.div3{
     background-color:#D3D3D3;
-    min-height: 600px;
-  }
-    .div3{
-    min-height: 300px;
-    width:450px;
+    min-height: 500px;
+  	}
+   .div4{
+    min-height: 380px;
+    width:1150px;
     background-color:#ffffff;
-    margin-left: 80px;
-    margin-top:200px;
+    margin-left: 95px;
+    margin-top:60px;
     position: absolute;
-  	top: 40px;
-  	text-align: center;
-  	opacity:45%; ;
-  }
-  
-  .div4{
-    min-height: 90px;
-    text-align: center;
-  }
-  .div5{
-    min-height: 500px;
-    background-color:#363636;
-  }
-   .div6{
-    min-height: 500px;
-    margin-bottom:  1050px;
+  	}
+  	.div4-1{
+    min-height: 380px;
     width:550px;
-    background-color:#ffff80;
+    background-color:#808080;
     float: right;
-  }
-   .div7{
-    min-height: 415px;
-    width:450px;
+  	}
+   .div4-2{
+    min-height: 310px;
+    width:470px;
     background-color:#ffffff;
-    margin-left: 50px;
-    margin-top: 45px;  
+    margin-left: 40px;
+    margin-top: 35px;  
   }
-   .textocx7{
-   min-height: 275px;
-   width:450px;
-  }
-  .div8{
-    min-height: 90px;
-    text-align: center; 
-  }
-  .div9{
-   	min-height: 500px;
+   .div5{
+    background-color:#ffff80;
+    min-height: 780px;
+  	}
+   .div6{
+    min-height: 300px;
+    width:1150px;
+    background-color:#ffffff;
+    margin-left: 95px;
+    margin-top:60px;
+    position: absolute;
+  	}
+  	.div7{
+    min-height: 300px;
+    width: 370px;
+    background-color:#D3D3D3;
+    float: left;
+   }
+  	.div8{
+    min-height: 300px;
+    width:1150px;
+    background-color:#ffffff;
+    margin-left: 95px;
+    margin-top:420px;
+    position: absolute;
+  	}
+    .div9{
+    min-height: 300px;
+    width: 370px;
+    background-color:#D3D3D3;
+    float: left;
+   }
+ 	.div10{
     background-color:#87CEEB;
-    background-image: url(../img/foto.png);
-  }
-  .div10{
-   min-height: 400px;
-   width: 1250px;
-   margin-left: 100px;
-  }
+    min-height: 750px;
+  	}
   .div11{
-   min-height: 90px;
-   text-align: center;
-  }
-.card{
-	margin-top: 45px;
-	min-height: 10px;
-   	width: 400px;
-} 
+    min-height: 310px;
+    width:570px;
+    background-color:#ffffff;
+    margin-left: 95px;
+    margin-top:385px;
+    position: absolute;
+  	}
 
- .vamo{
-   height: 400px;
-   width: 400px;
-   background-color:red;
-   margin-left: 50px;
-  }
-  /*RODAPÉ*/
-#footer{
+  /*RODAP�*/
+  #footer{
   background-color:#c0c0c0;
   width: 100%;
   height: 350px;
   }
-  
-  
-   .caixaamarela{
-    min-height: 500px;
-    width: 500px;
-    float:right;
-    margin-bottom:50px;
-    background-color:#ffff80;
-    font-size: 40px;
-    font-family: arial;
-    color: white;
-    text-align: center;
-}
-
-   .texto1{
-    min-height: 500px;
-    width: 500px;
-    float:left;
-    position: center;
-  
-}
-
-.titulos{
-	font-family: 'Bebas Neue', cursive;
-	 font-size: 40px;
-	 color: #fff; 
-	 text-align:right;
-	
-}
-
-.textos{
-	font-family: 'Bebas Neue', cursive;
-font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	 color: #fff; 
-	 text-align:right;
-}
-.titulos2{
-	font-family: 'Bebas Neue', cursive;
-	 font-size: 40px;
-	 color: #363636; 
-	 
-	
-}
-
-.textos2{
-	font-family: 'Bebas Neue', cursive;
-font-family: 'Roboto', sans-serif;
-	font-size: 20px;
-	 color: #363636; 
-}
