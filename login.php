@@ -4,7 +4,7 @@
     		<meta charset="UTF-8">
 			
       <!-- CSS -->
-			<link href="css/teste.css" type="text/css" rel="stylesheet">
+			<link href="css/login.css" type="text/css" rel="stylesheet">
 			<link href="css/footer.css" type="text/css" rel="stylesheet">
       <!-- JQUERY -->
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -57,4 +57,4 @@
     	
   		</div>
 	</body>
-</html>
+</html>  
