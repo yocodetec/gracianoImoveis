@@ -1,17 +1,17 @@
 .col-lg- {
   	min-height: 2200px;
 	}
-  	.div2{
+  	#div2{
     min-height: 420px;
     text-align: center;  
        background-color:#8080c0;
    
   	}
-  	.div3{
+  	#div3{
     background-color:#D3D3D3;
     min-height: 500px;
   	}
-   .div4{
+   #div4{
     min-height: 380px;
     width:1150px;
     background-color:#ffffff;
@@ -19,24 +19,24 @@
     margin-top:60px;
     position: absolute;
   	}
-  	.div4-1{
+  	#div4-1{
     min-height: 380px;
     width:550px;
     background-color:#808080;
     float: right;
   	}
-   .div4-2{
+   #div4-2{
     min-height: 310px;
     width:470px;
     background-color:#ffffff;
     margin-left: 40px;
     margin-top: 35px;  
   }
-   .div5{
+   #div5{
     background-color:#ffff80;
     min-height: 780px;
   	}
-   .div6{
+   #div6{
     min-height: 300px;
     width:1150px;
     background-color:#ffffff;
@@ -44,13 +44,13 @@
     margin-top:60px;
     position: absolute;
   	}
-  	.div7{
+  	#div7{
     min-height: 300px;
     width: 370px;
     background-color:#D3D3D3;
     float: left;
    }
-  	.div8{
+  	#div8{
     min-height: 300px;
     width:1150px;
     background-color:#ffffff;
@@ -58,17 +58,17 @@
     margin-top:420px;
     position: absolute;
   	}
-    .div9{
+    #div9{
     min-height: 300px;
     width: 370px;
     background-color:#D3D3D3;
     float: left;
    }
- 	.div10{
+ 	#div10{
     background-color:#87CEEB;
     min-height: 750px;
   	}
-  .div11{
+  #div11{
     min-height: 310px;
     width:570px;
     background-color:#ffffff;
