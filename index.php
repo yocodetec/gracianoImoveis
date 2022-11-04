@@ -95,7 +95,7 @@
 			
 			<div class="row">
 			<!-- SEGUNDA DIV -->
-			<div id="div2" class="">
+			<div id="div2">
     			<h3 class="sub-titulo"> Uma maneira fácil e rápida de encontrar aquilo que você procura!</h3>
     			
     			<div id="card-group" class="cards">
@@ -135,7 +135,7 @@
           		</div>
 
 			<div class="row">
-    		<div id="div3" class="">
+    		<div id="div3">
   				<img class="personagem-div3" src="img/img_div9.png">
             	<!-- BOTÕES -->
                 <div class="botoes-div3">
@@ -143,7 +143,7 @@
                 </div>
          	</div>
             
-            <div id="img-div3" class="">
+            <div id="img-div3">
                 <!-- IMAGEM ESQUERDA -->
               	<div class="texto-div3"> 
               		 <p class="fs-2 fw-bold"> Encontre a melhor maneira de financiar o seu imóvel</p>
@@ -167,7 +167,7 @@
 
 			<div class="row">			
 			<!-- IMAGEM ESQUERDA -->
-    		<div id="div4" class="">
+    		<div id="div4" >
     			<h3 class="sub-titulo"> Imóveis para a venda</h3>
   				
                <div id="carrosel" class="cards">
