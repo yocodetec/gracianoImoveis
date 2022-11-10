@@ -29,7 +29,7 @@
     		 
         		 <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-white border-bottom">
                       <div class="container-fluid">
-                        <a class="navbar-brand" href="frontHome.php">
+                        <a class="navbar-brand" href="index.php">
                         	 <!-- LOGO DA EMPRESA -->
                              <img src="" alt="" width="" height="" class="d-inline-block align-text-top">
                         </a>
@@ -45,11 +45,10 @@
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Imóveis para alugar</a></li>
                                 <li><a class="dropdown-item" href="#">Imóveis para comprar</a></li>
-                                <li><a class="dropdown-item" href="#">Como comprar</a></li>
                               </ul>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Sobre nós</a>
+                              <a class="nav-link" href="#div3">Sobre nós</a>
                             </li>
                             <li class="nav-item dropdown">
                               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,16 +57,18 @@
                               <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Encontramos para você</a></li>
                                 <li><a class="dropdown-item" href="#">Simuladores</a></li>
-                                <li><a class="dropdown-item" href="#">Como vender</a></li>
                               </ul>
                            </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#footer">Contato</a>
+                            </li>
 					  </ul>
                           <form class="d-flex">
                             <button class="btn btn-outline-secondary" type="button" onclick="assinar()">Login</button>
                            
                             <script type="text/javascript">
                                 function assinar(){
-                                	  window.location.href = "frontTeste.php"}
+                                	  window.location.href = "login.php"}
                             </script>
                             
                           </form>
@@ -82,7 +83,7 @@
 		     <!-- BANNER -->
     		 <div id="banner" class="parallax darkened-image">
     		 	<div id="titulo-banner" class="typing-animation">
-					<h2>Pronto para fazer as malas?</h2> 
+					<h3>Pronto para fazer as malas?</h3> 
 				</div>
 			</div>	
 			</div>
@@ -95,7 +96,7 @@
 			
 			<div class="row">
 			<!-- SEGUNDA DIV -->
-			<div id="div2">
+			<div id="div2" class="">
     			<h3 class="sub-titulo"> Uma maneira fácil e rápida de encontrar aquilo que você procura!</h3>
     			
     			<div id="card-group" class="cards">
@@ -104,7 +105,7 @@
                             <img src="img/icon-cx1.png" alt="Contact us.">
                         </div>
                         <h3>Comprador</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Colocar um texto aqui.</p>
                         <button>Compre um imóvel</button>
                     </div>
                     <div class="card inquilinos">
@@ -112,7 +113,7 @@
                             <img src="img/icon-cx2.png" alt="Shop here.">
                         </div>
                         <h3>Inquilinos</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Colocar um texto aqui.</p>
                         <button>Alugue um imóvel</button>
                     </div>
                     <div class="card proprietarios">
@@ -120,7 +121,7 @@
                             <img src="img/icon-cx3.png" alt="About us.">
                         </div>
                         <h3>Proprietários</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Colocar um texto aqui.</p>
                         <button>Anuncie um imóvel</button>
                     </div>
                 </div>
@@ -135,26 +136,61 @@
           		</div>
 
 			<div class="row">
-    		<div id="div3">
+    		<div id="div3" class="">
   				<img class="personagem-div3" src="img/img_div9.png">
             	<!-- BOTÕES -->
-                <div class="botoes-div3">
-                    <button class="btn btn-dark" type="button">Faça uma simulação</button>
+                <div class="botao-div3">
+                    <button id="ocultar-mostrar" class="btn btn-dark" type="button">Ver mais</button>
                 </div>
          	</div>
             
-            <div id="img-div3">
+            	<script>
+					$(document).ready(function(){
+						$("#ocultar-mostrar").click(function(){
+							$("#div-hidden").toggle();
+						});
+					});
+            	</script>
+            	
+            <div id="img-div3" class="">
                 <!-- IMAGEM ESQUERDA -->
               	<div class="texto-div3"> 
-              		 <p class="fs-2 fw-bold"> Encontre a melhor maneira de financiar o seu imóvel</p>
-                      	<br/>
-                      	A importância de ter uma imobiliária é a segurança 
-                        de ter todos os documentos corretos na hora da
-                      	compra e venda de imóveis. além da confecção de
-                      	contratos para a fiscalização de regras na locação
-                      	do seu imóvel.
+              		 <p class="fs-2 fw-bold"> Conheça um pouco mais sobre a nossa empresa</p>
+                      	
+						Adriano Azevedo Corretor de Imoveis à 18 anos oferecendo serviços de agenciamento imobiliário 
+						com qualidade e segurança em Guarulhos e região. Com sede própria, atuamos nos setores de vendas, 
+						locação e administração tanto para imóveis residenciais quanto para imóveis comerciais, oferecendo
+						uma variedade de serviços, desde estimativas<br/> de aluguéis, vendas e avaliações de imoveis
+					
                 </div>
 			</div>	
+			</div>
+			
+			<div id="div-hidden" class="">
+				<div class="row">
+            		<div id="div-missao" class="divs-hidden">
+            			<p class="fs-2 fw-bold">Nossa Missão</p>
+    					   
+    					Buscar excelência no ramo imobiliário superando as expectativas dos clientes, oferecendo 
+    					sempre um ótimo relacionamento, trabalhando com transparência, tendo como base a credibilidade, 
+    					domínio e reconhecimento no mercado imobiliário.
+            		</div>	
+
+            		<div id="div-visao" class="divs-hidden">
+            			<p class="fs-2 fw-bold">Nossa visão</p>
+    					   
+						Ser referência de qualidade na prestação de serviços imobiliários, sempre atentos ás mudanças do mercado, 
+						tornando-se uma empresa e conhecida e conceituada na cidade de Guarulhos e região, expandindo nosso volume 
+						de vendas e locações por meio da boa gestão, qualidade no atendimento e profissionalismo.
+			  		 </div>
+            		
+            		<div id="div-valores" class="divs-hidden">
+            			<p class="fs-2 fw-bold">Nossos valores</p>
+    					   
+    					   Trabalhar com ética e transparência, sempre comprometidos com trabalho em excelência, promovendo relações e
+						   parcerias duradouras com nossos clientes e colaboradores.
+            		</div>
+          		</div>
 			</div>
 
     			<div class="row">
@@ -167,7 +203,7 @@
 
 			<div class="row">			
 			<!-- IMAGEM ESQUERDA -->
-    		<div id="div4" >
+    		<div id="div4" class="">
     			<h3 class="sub-titulo"> Imóveis para a venda</h3>
   				
                <div id="carrosel" class="cards">
@@ -203,8 +239,8 @@
                         </div>
                       	
                       <div class="card-body-text">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Imóvel 1</h5>
+                        <p class="card-text">Info dos imóveis.</p>
                       </div>
                     </div>
                   </div>
@@ -239,8 +275,8 @@
                         </div>
 
                       <div class="card-body-text">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
+                        <h5 class="card-title">Imóvel 2</h5>
+                        <p class="card-text">Info dos imóveis.</p>
                       </div>
                     </div>
                   </div>
@@ -275,8 +311,8 @@
                         </div>
 
                       <div class="card-body-text">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <h5 class="card-title">Imóvel 3</h5>
+                        <p class="card-text">Info dos imóveis.</p>
                       </div>
                     </div>
                   </div>
@@ -311,8 +347,8 @@
                       </div>
 
                       <div class="card-body-text">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <h5 class="card-title">Imóvel 4</h5>
+                        <p class="card-text">Info dos imóveis.</p>
                       </div>
                     </div>
                   </div>
@@ -331,19 +367,44 @@
           			</div>
           		</div>
 
-			<div class="row">
-    		 <!-- RODAPÉ -->
-			<footer id="footer">
-			
-				Nosso Endereço
-				Rua Ferraz De Vasconcelos, 3 - Jd Santa Cecília / 07123-240<br/>
-				
-				(11) 9 3905-7735 WhatsApp
-				(11) 9 4724-8784 WhatsApp
-			
-			</footer>
-			</div>
+    		<!-- RODAPÉ -->
+    		<div class="row">
+    		<footer>
+                <div id="footer" class="container-footer">
+                    <div class="row-footer">
 
-		</div>
-	</body>
-</html>  
+                        <div class="footer-col-1">
+                            <h4>Endereço</h4>
+                            <ul>
+                            	<li><p>Rua Ferraz De Vasconcelos, 3 - Jd Santa Cecília / 07123-240</p></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Redes sociais</h4>
+                            <ul>
+                                <li><a href="https://api.whatsapp.com/send?phone=5511947248784&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+im%C3%B3vel+REF+828">Whatsapp</a></li>
+                                <li><a href="https://www.facebook.com/people/Graciano-Im%C3%B3veis/100083183897342/">Facebook</a></li>
+                                <li><a href="https://www.instagram.com/https://instagram.com/gracianoimoveis_gru?r=nametag">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Contatos</h4>
+                            <ul>
+                            	<li><p>Telefone: (11) 9 3905-7735</p></li>
+								<li><p>Telefone: (11) 9 3905-7735</p></li>
+                                <li><a href="#">Email</a></li>
+                            </ul>
+                        </div>
+                    	
+                    	</div>
+                	</div>
+
+       			</footer>
+       			</div>
+       			    <div class="row">
+                	<div class="copyright">
+                        <p>©2022 Copyright - <a href="#">YO.CODE</a></p>
+                    </div>
+                    </div>
+       	</div>
+	</body>    background-image: url(../img/banner.jpg);
