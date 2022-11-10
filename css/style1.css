@@ -11,6 +11,7 @@
 .parallax{
 	background-size: cover;
     background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 #form{
 	height: 415px;
@@ -28,12 +29,28 @@
     text-align: center;	    
 }
 #div3{
+	margin-top: 20px;
 	background-color:#87CEEB;
 	height: 440px;
     width: 51.5%;
     position: absolute;
     margin-left: 42%;
 }
+#div-hidden{
+	  display: none;
+}
+#div-hidden .divs-hidden{
+	background-color:#f1eabc;
+	height: 150px;
+    width: 82.5%;
+    margin-top: 20px;
+    margin-left: 8%;
+	box-shadow: 10px 10px 50px -30px #DBC4FF;
+}
+#div-hidden #div-missao{
+    margin-top: 70px;
+}
+
 #div4{
     margin-left: 6%;
     height: 500px;
@@ -49,15 +66,16 @@
     text-align: center;
 }
 #img-div3{
+	margin-top: 20px;
     height: 440px;
     width: 37%;
 	margin-left: 6%;
     background-image: url(../img/img_div10.jpg);
     background-size: 550px 600px;    
 }
-.botoes-div3{
-    margin-left: 60px;
-    margin-top: 330px;
+.botao-div3{
+    margin-left: 65px;
+    margin-top: 350px;
     position: absolute;
     text-align: center;
 }
@@ -69,7 +87,7 @@
     position: absolute;
 }
 .personagem-div3{
-	margin-left: 410px;
+	margin-left: 420px;
     margin-top: 170px;
     position: absolute;
     text-align: center;
@@ -84,7 +102,7 @@
 .darkened-image {
     filter: brightness(70%);
 }
-.parallax h2{
+.parallax h3{
 	color: #ffffff;
 	text-align: center;
 	font-size: 40px;
@@ -149,7 +167,7 @@
 
 .espaco{
 	width:100%;
-    height: 80px;
+    height: 60px;
 }
 .botoes-caixa{
     margin-top: 45px;
@@ -200,7 +218,7 @@
 
 #card-group.cards button {
     padding: 8px 11px;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 0;
     font-size: 90%;
     color: #ffffff;
@@ -228,13 +246,218 @@
 }
 /*RESPONSIVIDADE*/
 
-@media (max-width: 700px) { 
-	#banner{
+@media (max-width: 500px) { 
+#banner{
 	width: 100%;
-    height: 575px;
-    background-color: blue;
-    
+    height: 500px;    
 }
+#div2{
+	width: 100%;
+	height: 890px;
+	align-items: center;
+    text-align: center;	    
+}
+#div3{
+	margin-top: 30px;
+	background-color:#87CEEB;
+	height: 570px;
+    width: 90%;
+    position: relative;
+    margin-left: 5%;
+}
+#img-div3{
+	display:none;  
+}
+#div-hidden{
+	  display: none;
+}
+#div-hidden .divs-hidden{
+	background-color:#f1eabc;
+	height: 150px;
+    width: 82.5%;
+    margin-top: 20px;
+    margin-left: 8%;
+	box-shadow: 10px 10px 50px -30px #DBC4FF;
+}
+#div-hidden #div-missao{
+    margin-top: 70px;
+}
+
+#div4{
+    margin-left: 6%;
+    height: 1750px;
+	width: 87.5%;
+}
+#div4 h3{
+	text-align: center;
+	margin-top: 15px;
+}
+.botao-div4{
+    margin-left: 87%;
+    margin-top: 10px;
+    text-align: center;
+}
+.botao-div3{
+    margin-left: 15px;
+    margin-top: 440px;
+    position: absolute;
+    text-align: center;
+}
+.texto-div3{
+    height: 20px;
+    width:290px;
+    margin-left: 10px;
+    margin-top: 30px;
+    position: absolute;
+}
+.personagem-div3{
+	margin-left: 125px;
+    margin-top: 310px;
+    position: absolute;
+    text-align: center;
+    width: 190px;
+    height: 290px;
+}
+.sub-titulo h2{
+	font-family: 'Comfortaa', cursive;
+	font-family: 'Montserrat', sans-serif;
+	font-family: 'Roboto Mono', monospace;
+}
+.darkened-image {
+    filter: brightness(70%);
+}
+.parallax h3{
+	color: #ffffff;
+	text-align: center;
+	font-size: 22px;
+	margin-top: 255px;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#titulo-banner{
+	border-right: 2px solid #ffffff;
+	width:45%;
+ 	margin-left: 10px;
+ 	z-index: 8;
+}
+.typing-animation{
+	animation: cursor 500ms steps(40) infinite normal,
+	typing 8s steps(45) 1s infinite normal;
+}
+@keyframes typing{
+	from{
+		width:0;
+	}
+	to{
+		width:90%;
+	}
+}
+@keyframes cursor{
+	from{
+		border-right-color: #ffffff;
+	}
+	to{
+		border-right-color: transparent;
+	}
+}
+.card-body{
+	height: 300px;
+    width: 300px;
+}
+#carrosel .card-body-carrosel{
+	height: 350px;
+    width: 260px;
+    background-color:#ffffff;
+    border-radius: 5px;
+	margin-left: 10px;
+	border: solid 1px #c0c0c0;
+	margin-top: 3px;
+	box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+#carrosel .card-body-text{
+    margin-top: 20px;
+	font-size: 16px;
+    margin-left: 10px;
+}
+#carrosel .carousel-item{
+	height: 170px;
+    width: 100%;
+}
+#card-group{
+	margin-left: 5px;
+}
+
+.espaco{
+	width:100%;
+    height: 60px;
+}
+.botoes-caixa{
+    margin-top: 45px;
+}
+.cards {
+    display: flex;
+	flex-direction: column;	
+	align-items: center;
+    padding: 15px 170px;
+    margin-left: 1.5px;
+}
+#carrosel.cards {
+    display: flex;
+    padding: 15px 10px; 
+    margin-left: 1.5px;
+}
+
+#card-group.cards .card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    height: 255px;
+    margin-left: 20px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+#card-group.cards p {
+    font-weight: 300;
+    width: 240px;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+
+#card-group.cards button {
+    padding: 8px 11px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 90%;
+    color: #ffffff;
+    margin-bottom: 16px 0;
+}
+
+#card-group.cards .card.comprador button {
+    background-color: #808080;
+}
+#card-group.cards .card.inquilinos button {
+    background-color: #808080;
+}
+#card-group.cards .card.proprietarios button {
+    background-color: #808080;
+}
+
+#card-group.cards .card.comprador {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+#card-group.cards .card.inquilinos {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+#card-group.cards .card.proprietarios {
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+
 	#form{
 	height: 415px;
     width:85%;
