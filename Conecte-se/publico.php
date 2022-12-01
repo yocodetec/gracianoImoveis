@@ -1,4 +1,3 @@
-
 <?php
 
 
@@ -21,7 +20,7 @@ if (isset($_REQUEST["email"]) && isset($_REQUEST["senha"])){
     if ($checkUser == 0) {
     echo "<center><br><br><div class='alert alert-danger' style='width: 50%;' role='alert'>Este usuário não existe, tente novamente.</div></center>
     ";
-    header("Location: ./loginyocode.php");
+    header("Location: ./login.php");
     }
     else {
     echo "<center><br><br><div class='alert alert-success' style='width: 50%;' role='alert'>Usuário encontrado com sucesso!</div></center>";    
@@ -44,5 +43,6 @@ else {
 
 
 ?>
+
 
 
