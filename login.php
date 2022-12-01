@@ -35,21 +35,26 @@
                         <div id="titulo">
                         	<h2>Login</h2>
                         </div>
+                        <form action="login/publico.php" method="post">
+							<div class="textfield">
+								<label for="usuario">Usuário</label>
+							 <input type="email"  name="email"  aria-describedby="emailHelp" placeholder=" ex: yocodetec@gmail.com"><br>
+							</div>
+
+
+							<div class="textfield"> 
+								<label for="usuario">Senha</label>
+							 <input type="password"  name="senha"  placeholder="123">
+							
+
+							</div>
+							<button class="btn-login">Entrar</button>
+						   <br>
+						   
+		   </form>
                         
-                        <form action="" method="post">
-                            <div class="textfield">
-                            	<label for="usuario">Usuário</label>
-                            	<input type="text" name="nome" placeholder="Usuário" autofocus>
-                            </div>
-                            <div class="textfield">
-        						<label for="usuario">Senha</label>
-        						<input type="password" name="senha" placeholder="Senha">
-                        	</div>
-                        	
-                        	<button class="btn-login">Entrar</button>
-                        </form>
-                        <p>Ainda não tem uma conta?<a href="#">Criar conta</a></p>
-                        	
+                        
+						</div>
                         </div>
                         
         		</div>
