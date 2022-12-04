@@ -2,8 +2,8 @@
 	background: white;
 	border-bottom: gray;
 }*/
+
 #banner{
-	width:100%;
     background-color:#c0c0c0;
     height: 520px;
     background-image: url(../img/banner.jpg);
@@ -13,85 +13,71 @@
     background-attachment: fixed;
 	background-repeat: no-repeat;
 }
-#form{
-	height: 415px;
-    width:50%;
-    background-color:#ffffff;
-    margin-left: 45px;
-    margin-top:100px;
-    position: absolute;
-    top: 30px;
-    background-color: green;
-}
 #div2{
-	height: 330px;
+	height: 340px;
 	align-items: center;
-    text-align: center;	    
+    text-align: center;	  
 }
-#div3{
-	margin-top: 20px;
+#div4{
 	background-color:#87CEEB;
-	height: 440px;
-    width: 51.5%;
+	min-height: 500px;
     position: absolute;
-    margin-left: 42%;
+    margin-left:33%;
 }
 #div-hidden{
 	  display: none;
 }
+#central{
+	background-color:green;
+	height:500px;
+    margin:0;
+}
 #div-hidden .divs-hidden{
 	background-color:#f1eabc;
 	height: 150px;
-    width: 82.5%;
     margin-top: 20px;
-    margin-left: 8%;
+    margin-left: 10%;
 	box-shadow: 10px 10px 50px -30px #DBC4FF;
 }
 #div-hidden #div-missao{
     margin-top: 70px;
 }
-
-#div4{
-    margin-left: 6%;
+#div5{
     height: 500px;
-	width: 87.5%;
 }
-#div4 h3{
+#div5 h3{
 	text-align: center;
 	margin-top: 15px;
 }
-.botao-div4{
-    margin-left: 87%;
-    margin-top: 10px;
+.botao-div5{
+    margin-left: 0%;
+    margin-top: 2%;
     text-align: center;
 }
-#img-div3{
-	margin-top: 20px;
-    height: 440px;
-    width: 37%;
-	margin-left: 6%;
+#img-div4{
+    height: 500px;
+    position: absolute;
     background-image: url(../img/img_div10.jpg);
-    background-size: 550px 600px;    
+    background-size: 550px 600px;   
+	background-image: cover;   
 }
-.botao-div3{
+.botao-div4{
     margin-left: 65px;
     margin-top: 350px;
     position: absolute;
     text-align: center;
 }
-.texto-div3{
+.texto-div4{
     height: 20px;
-    width:450px;
-    margin-left: 550px;
-    margin-top: 30px;
+    margin-left: 10%;
+    margin-top: 7%;
     position: absolute;
 }
-.personagem-div3{
+.personagem-div4{
 	margin-left: 420px;
-    margin-top: 170px;
+    margin-top: 33%;
     position: absolute;
     text-align: center;
-    width: 220px;
     height: 320px;
 }
 .sub-titulo h2{
@@ -147,7 +133,7 @@
     width: 260px;
     background-color:#ffffff;
     border-radius: 5px;
-	margin-left: 10px;
+	margin-left: 5%;
 	border: solid 1px #c0c0c0;
 	margin-top: 3px;
 	box-shadow: 20px 20px 50px -30px #DBC4FF;
@@ -161,12 +147,9 @@
 	height: 170px;
     width: 100%;
 }
-#card-group{
-	margin-left: 5px;
-}
+
 
 .espaco{
-	width:100%;
     height: 60px;
 }
 .botoes-caixa{
@@ -174,12 +157,14 @@
 }
 .cards {
     display: flex;
-    padding: 15px 170px;
-    margin-left: 1.5px;
+    align-items: center;
+    padding: 10% 0%;
+    height: 350px;
 }
 #carrosel.cards {
     display: flex;
-    padding: 15px 10px; 
+	align-items: center;
+    padding: 15% 5%; 
     margin-left: 1.5px;
 }
 
@@ -188,15 +173,14 @@
     align-items: center;
     text-align: center;
     background: white;
-    padding: 15px 20px;
+    padding: 1% 3%;
     border-radius: 8px;
     height: 255px;
-    margin-left: 20px;
-    width: 300px;
+    margin-left:6.3%;
 }
 
 #card-group.cards .icon {
-    width: 64px;
+    width: 30%;
     height: 64px;
 }
 
@@ -211,7 +195,6 @@
 
 #card-group.cards p {
     font-weight: 300;
-    width: 240px;
     font-size: 17px;
     margin-bottom: 16px;
 }
@@ -245,228 +228,9 @@
     box-shadow: 20px 20px 50px -30px #DBC4FF;
 }
 /*RESPONSIVIDADE*/
-
-@media (max-width: 500px) { 
-#banner{
-	width: 100%;
-    height: 500px;    
-}
-#div2{
-	width: 100%;
-	height: 890px;
-	align-items: center;
-    text-align: center;	    
-}
-#div3{
-	margin-top: 30px;
-	background-color:#87CEEB;
-	height: 570px;
-    width: 90%;
-    position: relative;
-    margin-left: 5%;
-}
-#img-div3{
-	display:none;  
-}
-#div-hidden{
-	  display: none;
-}
-#div-hidden .divs-hidden{
-	background-color:#f1eabc;
-	height: 150px;
-    width: 82.5%;
-    margin-top: 20px;
-    margin-left: 8%;
-	box-shadow: 10px 10px 50px -30px #DBC4FF;
-}
-#div-hidden #div-missao{
-    margin-top: 70px;
-}
-
-#div4{
-    margin-left: 6%;
-    height: 1750px;
-	width: 87.5%;
-}
-#div4 h3{
-	text-align: center;
-	margin-top: 15px;
-}
-.botao-div4{
-    margin-left: 87%;
-    margin-top: 10px;
-    text-align: center;
-}
-.botao-div3{
-    margin-left: 15px;
-    margin-top: 440px;
-    position: absolute;
-    text-align: center;
-}
-.texto-div3{
-    height: 20px;
-    width:290px;
-    margin-left: 10px;
-    margin-top: 30px;
-    position: absolute;
-}
-.personagem-div3{
-	margin-left: 125px;
-    margin-top: 310px;
-    position: absolute;
-    text-align: center;
-    width: 190px;
-    height: 290px;
-}
-.sub-titulo h2{
-	font-family: 'Comfortaa', cursive;
-	font-family: 'Montserrat', sans-serif;
-	font-family: 'Roboto Mono', monospace;
-}
-.darkened-image {
-    filter: brightness(70%);
-}
-.parallax h3{
-	color: #ffffff;
-	text-align: center;
-	font-size: 22px;
-	margin-top: 255px;
-	text-transform: uppercase;
-	font-family: 'Roboto Mono', monospace;
-	white-space: nowrap;
-	overflow: hidden;
-}
-#titulo-banner{
-	border-right: 2px solid #ffffff;
-	width:45%;
- 	margin-left: 10px;
- 	z-index: 8;
-}
-.typing-animation{
-	animation: cursor 500ms steps(40) infinite normal,
-	typing 8s steps(45) 1s infinite normal;
-}
-@keyframes typing{
-	from{
-		width:0;
+@media (max-width: 600px) {
+	.personagem-div4{
+		display: none;
 	}
-	to{
-		width:90%;
-	}
-}
-@keyframes cursor{
-	from{
-		border-right-color: #ffffff;
-	}
-	to{
-		border-right-color: transparent;
-	}
-}
-.card-body{
-	height: 300px;
-    width: 300px;
-}
-#carrosel .card-body-carrosel{
-	height: 350px;
-    width: 260px;
-    background-color:#ffffff;
-    border-radius: 5px;
-	margin-left: 10px;
-	border: solid 1px #c0c0c0;
-	margin-top: 3px;
-	box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-#carrosel .card-body-text{
-    margin-top: 20px;
-	font-size: 16px;
-    margin-left: 10px;
-}
-#carrosel .carousel-item{
-	height: 170px;
-    width: 100%;
-}
-#card-group{
-	margin-left: 5px;
-}
 
-.espaco{
-	width:100%;
-    height: 60px;
-}
-.botoes-caixa{
-    margin-top: 45px;
-}
-.cards {
-    display: flex;
-	flex-direction: column;	
-	align-items: center;
-    padding: 15px 170px;
-    margin-left: 1.5px;
-}
-#carrosel.cards {
-    display: flex;
-    padding: 15px 10px; 
-    margin-left: 1.5px;
-}
-
-#card-group.cards .card {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    height: 255px;
-    margin-left: 20px;
-    width: 300px;
-    margin-top: 20px;
-}
-
-#card-group.cards p {
-    font-weight: 300;
-    width: 240px;
-    font-size: 17px;
-    margin-bottom: 16px;
-}
-
-#card-group.cards button {
-    padding: 8px 11px;
-    border-radius: 15px;
-    border: 0;
-    font-size: 90%;
-    color: #ffffff;
-    margin-bottom: 16px 0;
-}
-
-#card-group.cards .card.comprador button {
-    background-color: #808080;
-}
-#card-group.cards .card.inquilinos button {
-    background-color: #808080;
-}
-#card-group.cards .card.proprietarios button {
-    background-color: #808080;
-}
-
-#card-group.cards .card.comprador {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-#card-group.cards .card.inquilinos {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-#card-group.cards .card.proprietarios {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
-}
-
-	#form{
-	height: 415px;
-    width:85%;
-    margin-left: 15px;
-    margin-top:100px;
-    position: absolute;
-    top: 30px;
-    background-color: yellow;
-    
-}
-	
 }

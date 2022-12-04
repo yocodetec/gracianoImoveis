@@ -1,17 +1,17 @@
-#header{
-	height: 90px;
-	width: 100%;
-	text-align: center;
-	font-size: 16px;
-	top:0;
-}
+header{
+ padding-top: 90px;
+ }
 nav{
-	align-items: center;
-	justify-content: space-between;
-	height: 90px;
-	width: 100%;
-	text-align: center;
+	color:#9b9b9b;
+	font-weight: 400;
 	font-size: 17px;
 	top:0;
+	border-bottom: 1px solid #e5e5e5;
 }
-
+nav a{
+	    margin-left: 20px;
+}
+.active, nav a:hover{
+	background-color: #e1e1e1;
+	transition: .5s;
+}

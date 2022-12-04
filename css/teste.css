@@ -1,0 +1,258 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.login-button button{
+	padding: 10px 15px;
+	border-radius: 5px;
+	border: none;
+	background-color: #e1e1e1;
+}
+.login-button button a{
+	text-decoration: none;
+	color: #000000;
+	font-weight: 500;
+	font-size: 17px;
+}
+.container{
+	margin-top:20px;
+}
+footer .container-fluid{
+	margin-top:70px;
+}
+.div1{
+	min-height: 90px;
+}
+.div2{
+	min-height: 450px;
+}
+.div3{
+	min-height: 300px;
+}
+.div-cards{
+	margin-bottom: 25px;
+}
+.div4{
+	min-height: 450px;
+}
+.div5{
+	min-height: 450px;	
+}
+.div6{
+	min-height: 400px;
+}
+.div7{
+	min-height: 50px;	
+}
+.div8{
+	min-height: 500px;	
+}
+.div9{
+	min-height: 90px;	
+}
+.div10{
+	min-height: 90px;	
+}
+.div11{
+	min-height: 90px;	
+}
+.div12{
+	min-height: 50px;	
+	text-align: center;		
+}
+
+/* BANNER */
+#banner{
+	background-color:#c0c0c0;
+    background-image: url(../img/banner.jpg);
+}
+.parallax{
+	background-size: cover;
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.darkened-image {
+    filter: brightness(70%);
+}
+.parallax h3{
+	color: #ffffff;
+	text-align: center;
+	font-size: 40px;
+	margin-top: 220px;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', monospace;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#titulo-banner{
+	border-right: 2px solid #ffffff;
+	width:45%;
+ 	margin-left: 350px;
+ 	z-index: 8;
+}
+.typing-animation{
+	animation: cursor 500ms steps(40) infinite normal,
+	typing 8s steps(45) 1s infinite normal;
+}
+@keyframes typing{
+	from{
+		width:0;
+	}
+	to{
+		width:46%;
+	}
+}
+@keyframes cursor{
+	from{
+		border-right-color: #ffffff;
+	}
+	to{
+		border-right-color: transparent;
+	}
+}
+/* DIV COM CARDS */
+#titulo-card{
+	align-items: center;
+    text-align: center; 
+    margin-top:20px;
+    
+}
+#card-top{
+	margin-top:20px;
+	display: flex;
+	padding: 10px 10px;
+	flex-wrap: wrap;
+	background-color:red;
+	height: 400px;
+	
+}
+.link-card a{
+    float: right;
+	color: #000000;
+	position: right;
+}
+
+#card-top.card{
+    align-items: center;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    height: 400px;
+	padding: 10% 0%;
+    display: flex;
+}
+#card-top .card img {
+    width: 100%;
+}
+#card-top.card h3 {
+    font-size: 100%;
+    margin: 10px 0;
+}
+#card-top.card p {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 16px;
+    text-align: justify;
+    padding: 0px 10px;
+}
+#card-top.card button {
+    padding: 8px 11px;
+    border-radius: 15px;
+    border: 0;
+    font-size: 90%;
+    color: #ffffff;
+    margin-bottom: 16px 0;
+}
+.card#card-top button {
+    background-color: #808080;
+}
+.card#card-top {
+    box-shadow: 20px 20px 50px -30px #808080;
+}
+/* DIV SOBRE NÓS */
+#sobre-texto{
+	background-color: #87CEEB;	
+}
+#sobre-texto p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 16px;
+}
+#sobre-img{
+    background-image: url(../img/img_div10.jpg);
+    background-size: 550px 600px;   
+	background-image: cover;   
+}
+/* DIV ESCONDIDA */
+#div-hidden{
+	margin-top: 30px;
+	display: none;
+}
+#div-hidden .divs-hidden{
+	background-color:#f1eabc;
+	height: 160px;
+    margin-top: 20px;
+	box-shadow: 10px 10px 50px -30px #DBC4FF;
+}
+#div-hidden p {
+    font-weight: 300;
+    font-size: 17px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+.sub-titulo{
+	padding: 15px;
+	text-align: center;
+}
+.espaco{
+	height:10px;
+}
+/* DIV COM CARROSEL */
+#div_cards{
+	justify-content: center;
+	align-items:center;
+}
+#cards{
+	display: flex;
+	padding: 10px 5px;
+	flex-wrap: wrap;
+}
+#cards .card-body{
+    width: 155px;
+	background-color:#ffffff;
+	margin-left: 15px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction:column;
+	border: 1px solid #c0c0c0;
+    box-shadow: 20px 20px 50px -30px #DBC4FF;
+}
+#cards .card-body .texto{
+	padding: 10px 5px;
+}
+#cards .card-body .imgs{
+	height:250px;
+}
+#cards .card-body .imgs img{
+	width: 100%;
+	height:100%;
+}
+#cards .card-body:first-child{
+	margin:0;
+}
+#cards button{
+	border: 1px solid #e2e2e2;
+}
+#carrosel.cards {
+    display: flex;
+	align-items: center;
+    padding: 15% 5%; 
+    margin-left: 1.5px;
+}
+.botao-div5{
+    margin-left: 0%;
+    margin-top: 2%;
+    text-align: center;
+}
