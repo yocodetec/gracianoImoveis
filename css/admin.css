@@ -1,0 +1,67 @@
+
+  .name{
+    min-height: 100px;
+  }
+  #conteudo{
+		width: 70%;
+		float: right;
+		text-align: center;
+		}
+		
+		#menu ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+		#menu a:link {
+		background: #F5F5F5;
+		color: #666;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+		#menu a:hover {
+		background: #E5F0FF;
+		color: #039;
+		}
+
+  @media only screen and (max-width:1760px){
+       
+    h3{
+      display:none;
+    }
+    .navbar-brand span{
+
+      display: none;
+    }
+
+
+  }
+  
+  @media only screen and (max-width:1330px){
+       
+    h3{
+      display:none;
+    }
+    .navbar-brand span{
+
+      display: none;
+    }
+
+  }
+
+  @media only screen and (max-width:950px){
+       
+    h3{
+      display:none;
+    }
+    .navbar-brand span{
+
+      display: none;
+    }
+
+
+  }
+  

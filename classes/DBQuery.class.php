@@ -18,20 +18,7 @@ class DBQuery {
         $this->setFieldKey	( $fieldKey   );
        
         $dbconn = new DBConnection();
-        echo "<br>4<br>";
         $this->conn = $dbconn->getConn();
-    }
-    
-    function removeQuotes($str) {
-        return( str_replace('\'', '', $str ) );
-    }
-
-    function removeQuotesArray($array) {
-        $tmpArray = array();
-        for ($i = 0; $i < count($array); $i++) {
-            $tmpArray[$i] = removeQuotes($array[$i]);
-        }
-        return( $tmpArray );
     }
     
     public function select($where) {

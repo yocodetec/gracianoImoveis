@@ -1,0 +1,41 @@
+
+.container{
+	background-color: #F5F5F5;
+	min-height: 1200px;
+}
+
+.div1{
+	min-height: 100px;
+	
+}
+.div2{
+	border-radius: 30px;
+	min-height: 400px;
+	min-width: 200px;
+	
+}
+
+#conteudo{
+		width: 70%;
+		float: right;
+		text-align: center;
+		}
+		
+		#menu ul li {
+		margin: 0; padding: 0px;
+		border-bottom: 1px solid #CCC;
+		text-align: left;
+		list-style-type: none;
+		}
+		#menu a:link {
+		background: #F5F5F5;
+		color: #666;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 8px;
+		display: block;
+		}
+		#menu a:hover {
+		background: #E5F0FF;
+		color: #039;
+		}

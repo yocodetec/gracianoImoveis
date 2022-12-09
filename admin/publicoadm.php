@@ -10,7 +10,7 @@ if (isset($_REQUEST["email"]) && isset($_REQUEST["senha"])){
     include_once '../classes/LoginAdm.class.php';
     $usuario = new Adm("$email", "$senha");
     
-    $resultSet  = $DBConnection->query($usuario->checkUsuariosLogin()); 
+    $resultSet  = $conexao->query($usuario->checkUsuariosLogin()); 
     $checkUser = mysqli_num_rows($resultSet);
 
     if ($checkUser == 0) {
@@ -26,7 +26,7 @@ if (isset($_REQUEST["email"]) && isset($_REQUEST["senha"])){
     // ADM pode logar
     session_start();
     $_SESSION['loggedInADM'] = '1';
-    header('Location: admin.php');
+    header('Location: ../admin.php');
     }
     //
 }

@@ -1,5 +1,6 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
+    
 	class Colaboradores {
 
 		private $idColaborador;

@@ -1,19 +1,20 @@
 <?php
+    require_once 'DBQuery.class.php';
 
-    require "DBQuery.class.php";
 	class DispRecurso {
 
 		private $idDispRecurso;
 		private $dtDispRecurso;
 		private $horaIni;
 		private $horaFim;
+		private $comentario;
 		private $idRecurso;
 		
 		private $dbquery;
 
-		function __construct( $idDispRecurso, $dtDispRecurso, $horaIni, $horaFim, $idRecurso){
+		function __construct( $idDispRecurso, $dtDispRecurso, $horaIni, $horaFim, $comentario, $idRecurso){
 		    $tableName  = "agendamentos.disprecurso"; //Nome do banco.tabela
-		    $fieldsName = "idDispRecurso,dtDispRecurso,horaIni,horaFim,idRecurso"; //Nome dos Campos
+		    $fieldsName = "idDispRecurso,dtDispRecurso,horaIni,horaFim,comentario,idRecurso"; //Nome dos Campos
 		    $fieldKey   = "idDispRecurso"; //Nome do chaveprimária
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
 		    
@@ -21,6 +22,7 @@
 			 $this->setDtDispRecurso( $dtDispRecurso );
 			 $this->setHoraIni( $horaIni );
 			 $this->setHoraFim( $horaFim );
+			 $this->setComentario( $comentario );
 			 $this->setIdRecurso( $idRecurso );
 		}
 
@@ -30,6 +32,7 @@
 				 $this->getDtDispRecurso(),
 				 $this->getHoraIni(),
 				 $this->getHoraFim(),
+			     $this->getComentario(),
 				 $this->getIdRecurso()
 			);
 		}
@@ -88,6 +91,16 @@
 		public function getHoraFim(){
 			  return( $this->horaFim );
 		}
+		
+		
+		public function setComentario( $comentario ){
+		    $this->comentario = $comentario;
+		}
+		
+		public function getComentario(){
+		    return( $this->comentario);
+		}
+		
 
 		public function setIdRecurso( $idRecurso ){
 			 $this->idRecurso = $idRecurso;

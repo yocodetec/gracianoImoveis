@@ -1,5 +1,5 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
   
 	class AgendaEmpresa {
 
@@ -41,7 +41,7 @@
 		}
 		
 		public function save() {
-		    if($this->getIdUsuario() == 0){
+		    if($this->getIdAgendaEmpresa() == 0){
 		        return( $this->dbquery->insert($this->toArray()));
 		    }else{
 		        return( $this->dbquery->update($this->toArray()));
@@ -54,7 +54,7 @@
 		}
 		
 		public function delete() {
-		    if($this->getIdUsuario() != 0){
+		    if($this->getIdAgendaEmpresa() != 0){
 		        return( $this->dbquery->delete($this->toArray()));
 		    }
 		}

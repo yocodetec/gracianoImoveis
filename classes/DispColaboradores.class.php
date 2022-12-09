@@ -1,5 +1,5 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
     
 	class DispColaboradores {
 
@@ -13,9 +13,9 @@
 
 		function __construct( $idDispColaborador, $dtDisp, $horaIni, $horaFim, $idColaborador){
 		    
-		    $tableName  = "agendamentos.dispColaboradores"; //Nome do banco.tabela
-		    $fieldsName = "idDispColaborador,dtDisp,horaIni,horaFim,idColaborador"; //Nome dos Campos
-		    $fieldKey   = "idDispColaborador"; //Nome do chaveprimária
+		    $tableName  = "agendamentos.dispColaboradores"; 
+		    $fieldsName = "idDispColaborador,dtDisp,horaIni,horaFim,idColaborador"; 
+		    $fieldKey   = "idDispColaborador";
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
 		    
 			 $this->setIdDispColaborador( $idDispColaborador );

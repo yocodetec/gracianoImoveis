@@ -1,34 +1,41 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
     
 	class EspColaboradores {
 
+		private $idespColaboradores;
 		private $idColaborador;
-		private $idEspecialidade;
+		private $vendas;
+		private $aluguel;
 
-		function __construct( $idColaborador, $idEspecialidade){
-		    $tableName  = "agendamentos.agendaEmpresa"; //Nome do banco.tabela
-		    $fieldsName = "idAgendaEmpresa,dtFuncionamento,horaIni,horaFim"; //Nome dos Campos
-		    $fieldKey   = "idAgendaEmpresa"; //Nome do chaveprimária
+		function __construct($idespColaboradores, $idColaborador, $vendas, $aluguel){
+		    $tableName  = "agendamentos.espcolaboradores"; //Nome do banco.tabela
+		    $fieldsName = "idespColaboradores,idColaborador,vendas,aluguel"; //Nome dos Campos
+		    $fieldKey   = "idespColaboradores"; //Nome do chaveprimária
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
 		    
-			 $this->setIdColaborador( $idColaborador );
-			 $this->setIdEspecialidade( $idEspecialidade );
+		    $this->setIdespColaboradores($idespColaboradores);
+		    $this->setIdColaborador($idColaborador);
+		    $this->setVendas($vendas);
+		    $this->setAluguel($aluguel);
 		}
-
+		
+		
 		public function toArray(){
-			 return array(
-				 $this->getIdColaborador(),
-				 $this->getIdEspecialidade()
-			);
+		    return array(
+		        $this->getIdespColaboradores(),
+		        $this->getIdColaborador(),
+		        $this->getVendas(),
+		        $this->getAluguel(),
+		    );
 		}
-
+		
 		public function toString(){
-			 return("\n\t\t\t\t". implode(", ",$this->toArray()));
+		    return("\n\t\t\t\t". implode(", ",$this->toArray()));
 		}
 		
 		public function save() {
-		    if($this->getIdUsuario() == 0){
+		    if($this->getIdespColaboradores() == 0){
 		        return( $this->dbquery->insert($this->toArray()));
 		    }else{
 		        return( $this->dbquery->update($this->toArray()));
@@ -41,29 +48,47 @@
 		}
 		
 		public function delete() {
-		    if($this->getIdUsuario() != 0){
+		    if($this->getIdespColaboradores() != 0){
 		        return( $this->dbquery->delete($this->toArray()));
 		    }
 		}
+	
+		public function setIdespColaboradores( $idespColaboradores ){
+		    $this->idespColaboradores = $idespColaboradores;
+		}
 		
-
-		public function setIdColaborador( $idColaborador ){
-			 $this->idColaborador = $idColaborador;
+		public function getIdespColaboradores(){
+		    return( $this->idespColaboradores);
 		}
-
+		
+		
+		public function setIdColaborador( $idColaborador){
+		    $this->idColaborador = $idColaborador;
+		}
+		
 		public function getIdColaborador(){
-			  return( $this->idColaborador );
+		    return( $this->idColaborador);
 		}
-
-		public function setIdEspecialidade( $idEspecialidade ){
-			 $this->idEspecialidade = $idEspecialidade;
+		
+		
+		public function setVendas($vendas){
+		    $this->vendas= $vendas;
 		}
-
-		public function getIdEspecialidade(){
-			  return( $this->idEspecialidade );
+		
+		public function getVendas(){
+		    return( $this->vendas);
 		}
-
+		
+		public function setAluguel($aluguel){
+		    $this->aluguel= $aluguel;
+		}
+		
+		public function getAluguel(){
+		    return( $this->aluguel);
+		}
+		
+		
+		
 	}
-
 
 ?>

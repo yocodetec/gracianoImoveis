@@ -1,8 +1,10 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
+
 	class Recursos {
 
 		private $idRecurso;
+		private $nomedoimovel;
 		private $tipo;
 		private $qtQuartos;
 		private $qtSuites;
@@ -10,18 +12,19 @@
 		private $areaConstru;
 		private $vagas;
 		private $descr;
-
+		private $idCliente;
 		
 		private $dbquery;
 		
-		function __construct($idRecurso, $tipo, $qtQuartos, $qtSuites, $qtBanheiros, $areaConstru, $vagas, $descr){
+		function __construct($idRecurso, $nomedoimovel, $tipo, $qtQuartos, $qtSuites, $qtBanheiros, $areaConstru, $vagas, $descr, $idCliente){
 		    
 		    $tableName  = "agendamentos.recursos"; //Nome do banco.tabela
-		    $fieldsName = "idRecurso,tipo,qtQuartos,qtSuites,qtBanheiros,areaConstru,vagas,descr"; //Nome dos Campos
+		    $fieldsName = "idRecurso,nomedoimovel,tipo,qtQuartos,qtSuites,qtBanheiros,areaConstru,vagas,descr,idCliente"; //Nome dos Campos
 		    $fieldKey   = "idRecurso"; //Nome do chaveprimária
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
 		    
 			 $this->setIdRecurso( $idRecurso );
+			 $this->setNomedoimovel( $nomedoimovel );
 			 $this->setTipo( $tipo );
 			 $this->setQtQuartos( $qtQuartos );
 			 $this->setQtSuites( $qtSuites );
@@ -29,18 +32,21 @@
 			 $this->setAreaConstru( $areaConstru );
 			 $this->setVagas( $vagas );
 			 $this->setDescr( $descr );
+			 $this->setIdCliente( $idCliente );
 		}
 
 		public function toArray(){
 			 return array(
 				 $this->getIdRecurso(),
 				 $this->getTipo(),
+			     $this->getNomedoimovel(),
 				 $this->getQtQuartos(),
 				 $this->getQtSuites(),
 				 $this->getQtBanheiros(),
 				 $this->getAreaConstru(),
 				 $this->getVagas(),
-				 $this->getDescr()
+				 $this->getDescr(),
+			     $this->getIdCliente()
 			);
 		}
 
@@ -74,6 +80,14 @@
 
 		public function getIdRecurso(){
 			  return( $this->idRecurso );
+		}
+		
+		public function setNomedoimovel( $nomedoimovel ){
+		    $this->nomedoimovel = $nomedoimovel;
+		}
+		
+		public function getNomedoimovel(){
+		    return( $this->nomedoimovel );
 		}
 
 		public function setTipo( $tipo ){
@@ -132,6 +146,13 @@
 			  return( $this->descr );
 		}
 
+		public function setIdCliente( $idCliente ){
+		    $this-> idCliente = $idCliente;
+		}
+		
+		public function getIdCliente(){
+		    return( $this->idCliente );
+		}
 	}
 
 

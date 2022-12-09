@@ -15,7 +15,7 @@ if (isset($_REQUEST["email"]) && isset($_REQUEST["senha"])){
     $usuario = new Usuarios();
     $usuario->__setLogin("$email", "$senha","$idUsuario");
     
-    $resultSet  = $DBConnection->query($usuario->checkUsuariosLogin());
+    $resultSet  = $conexao->query($usuario->checkUsuariosLogin());
     $checkUser = mysqli_num_rows($resultSet);
 
     if ($checkUser == 0) {

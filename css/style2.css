@@ -3,6 +3,7 @@
 	padding:0;
 	box-sizing: border-box;
 }
+
 .div1{
 	min-height: 300px;
 }
@@ -10,16 +11,12 @@
 	min-height: 1000px;
 }
 .div3{
-	min-height: 130px;
+	min-height: 70px;
 }
-.div4{
-	border: 3px solid purple; 
-	min-height: 100px;
-}
-.div5{
+.divlinha1{
 	min-height: 400px;
 }
-.div6{
+.divlinha2{
 	min-height: 400px;
 }
 .div7{
@@ -39,22 +36,17 @@
 #div3 h3{
 	padding:20px;
 }
+#div4{
+	margin-top:10px;
+}
 #div5{
-	margin-top:20px;
+	margin-top:10px;
 }
 #div6{
 	margin-top:20px;
 }
-select{
-	border: 1px solid #e2e2e2;
-}
-.negociacao{
-	padding: 10px;
-}
-.btn-colum{
-	height:50px;
-	border: none;
-	background-color:white;
+#div7{
+	margin-top:20px;
 }
 
 #tipo_imovel{
@@ -109,4 +101,7 @@ select{
 	align-items: center;
     padding: 15% 5%; 
     margin-left: 1.5px;
+}
+.bnt-form{
+	background-color:#8080ff;
 }

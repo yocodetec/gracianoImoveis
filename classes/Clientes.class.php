@@ -1,5 +1,5 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
     
 	class Clientes {
 
@@ -7,16 +7,17 @@
 		private $nome;
 		private $sobrenome;
 		private $email;
+		private $telefone;
 		private $dtNasc;
 		private $CPF;
 		private $Endereco;
 		
 		private $dbquery;
 
-		function __construct( $idCliente, $nome, $sobrenome,$email, $dtNasc, $CPF, $Endereco){
+		function __construct( $idCliente, $nome, $sobrenome,$email, $telefone, $dtNasc, $CPF, $Endereco){
 		    
 		    $tableName  = "agendamentos.clientes"; //Nome do banco.tabela
-		    $fieldsName = "idCliente,nome,sobrenome,email,dtNasc,CPF,Endereco"; //Nome dos Campos
+		    $fieldsName = "idCliente,nome,sobrenome,email,telefone,dtNasc,CPF,Endereco"; //Nome dos Campos
 		    $fieldKey   = "idCliente"; 
 
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
@@ -26,6 +27,7 @@
 			 $this->setNome( $nome );
 			 $this->setSobrenome( $sobrenome );
 			 $this->setEmail( $email );
+			 $this->setTelefone( $telefone );
 			 $this->setDtNasc( $dtNasc );
 			 $this->setCPF( $CPF );
 			 $this->setEndereco( $Endereco );
@@ -37,8 +39,9 @@
 				 $this->getIdCliente(),
 				 $this->getNome(),
 				 $this->getSobrenome(),
-				 $this->getDtNasc(),
 			     $this->getEmail(),
+			     $this->getTelefone(),
+				 $this->getDtNasc(),
 				 $this->getCPF(),
 				 $this->getEndereco()
 			);
@@ -97,6 +100,14 @@
 		
 		public function getEmail(){
 		    return( $this->email );
+		}
+		
+		public function setTelefone( $telefone ){
+		    $this->telefone = $telefone;
+		}
+		
+		public function getTelefone(){
+		    return( $this->telefone );
 		}
 		
 		public function setDtNasc( $dtNasc ){

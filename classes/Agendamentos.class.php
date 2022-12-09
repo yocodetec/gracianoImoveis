@@ -1,5 +1,5 @@
 <?php
-    require "DBQuery.class.php";
+    require_once 'DBQuery.class.php';
     
 	class Agendamentos {
 
@@ -7,17 +7,17 @@
 		private $dtAgendamento;
 		private $horaIni;
 		private $horaFim;
-		private $idCliente;
+		private $nomedocliente;
 		private $idColaborador;
-		private $idEspecialidade;
+		private $idespColaboradores;
 		private $idRecurso;
 		
 		private $dbquery;
 		
-		function __construct( $idAgendamento, $dtAgendamento, $horaIni, $horaFim, $idCliente, $idColaborador, $idEspecialidade, $idRecurso){
+		function __construct( $idAgendamento, $dtAgendamento, $horaIni, $horaFim, $nomedocliente, $idColaborador,$idespColaboradores, $idRecurso){
 		    
 		    $tableName  = "agendamentos.agendamentos"; //Nome do banco.tabela
-		    $fieldsName = "idAgendamento,dtAgendamento,horaIni,horaFim,idCliente,idColaborador,idEspecialidade,idRecurso"; //Nome dos Campos
+		    $fieldsName = "idAgendamento,dtAgendamento,horaIni,horaFim,nomedocliente,idColaborador,idespColaboradores,idRecurso"; //Nome dos Campos
 		    $fieldKey   = "idAgendamento"; //Nome do chaveprimária
 		    $this->dbquery = new DBQuery($tableName, $fieldsName, $fieldKey);
 		    
@@ -26,9 +26,9 @@
 			 $this->setDtAgendamento( $dtAgendamento );
 			 $this->setHoraIni( $horaIni );
 			 $this->setHoraFim( $horaFim );
-			 $this->setIdCliente( $idCliente );
+			 $this->setNomedocliente( $nomedocliente);
 			 $this->setIdColaborador( $idColaborador );
-			 $this->setIdEspecialidade( $idEspecialidade );
+			 $this->setIdespColaboradores( $idespColaboradores);
 			 $this->setIdRecurso( $idRecurso );
 		}
 
@@ -38,9 +38,9 @@
 				 $this->getDtAgendamento(),
 				 $this->getHoraIni(),
 				 $this->getHoraFim(),
-				 $this->getIdCliente(),
+			     $this->getNomedocliente(),
 				 $this->getIdColaborador(),
-				 $this->getIdEspecialidade(),
+			     $this->getIdespColaboradores(),
 				 $this->getIdRecurso()
 			);
 		}
@@ -51,7 +51,7 @@
 
 		
 		public function save() {
-		    if($this->getIdUsuario() == 0){
+		    if($this->getIdAgendamento() == 0){
 		        return( $this->dbquery->insert($this->toArray()));
 		    }else{
 		        return( $this->dbquery->update($this->toArray()));
@@ -64,7 +64,7 @@
 		}
 		
 		public function delete() {
-		    if($this->getIdUsuario() != 0){
+		    if($this->getIdAgendamento() != 0){
 		        return( $this->dbquery->delete($this->toArray()));
 		    }
 		}
@@ -103,12 +103,12 @@
 			  return( $this->horaFim );
 		}
 
-		public function setIdCliente( $idCliente ){
-			 $this->idCliente = $idCliente;
+		public function setNomedocliente( $nomedocliente ){
+		    $this->nomedocliente = $nomedocliente;
 		}
 
-		public function getIdCliente(){
-			  return( $this->idCliente );
+		public function getNomedocliente(){
+		    return( $this->nomedocliente );
 		}
 
 		public function setIdColaborador( $idColaborador ){
@@ -119,14 +119,15 @@
 			  return( $this->idColaborador );
 		}
 
-		public function setIdEspecialidade( $idEspecialidade ){
-			 $this->idEspecialidade = $idEspecialidade;
+		public function setIdespColaboradores( $idespColaboradores ){
+		    $this->idespColaboradores = $idespColaboradores;
 		}
-
-		public function getIdEspecialidade(){
-			  return( $this->idEspecialidade );
+		
+		public function getIdespColaboradores(){
+		    return( $this->idespColaboradores);
 		}
-
+		
+		
 		public function setIdRecurso( $idRecurso ){
 			 $this->idRecurso = $idRecurso;
 		}

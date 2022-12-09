@@ -1,7 +1,7 @@
 <?php
 
-include_once "DBConnection.class.php";
-$DBConnection = new DBConnection();
+include_once "conexao.class.php";
+$conexao = new conexao();
 class Adm {
     
     private $email;
